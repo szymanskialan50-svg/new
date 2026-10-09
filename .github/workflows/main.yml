@@ -88,8 +88,8 @@ jobs:
           mkdir -p dist/driver
           find uc -type f -iname "UnityCaptureFilter*.dll" -not -path "uc/.git/*" -exec cp -v {} dist/driver/ \;
           ls dist/driver
-          if [ ! -f dist/driver/UnityCaptureFilter64bit.dll ]; then
-            echo "UnityCaptureFilter64bit.dll not found in repo - see file list above"; exit 1
+          if [ ! -f dist/driver/UnityCaptureFilter64.dll ]; then
+            echo "UnityCaptureFilter64.dll not found in repo - see file list above"; exit 1
           fi
           cp desktop/Install-HD-Camera.bat desktop/Uninstall-HD-Camera.bat dist/
 
